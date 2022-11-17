@@ -1,4 +1,6 @@
-.wrapper {}
+.wrapper {
+  scroll-behavior: smooth;
+}
 
 .header {
   position: fixed;
