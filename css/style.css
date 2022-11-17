@@ -3,10 +3,6 @@
 }
 
 .header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  width: 100%;
   height: auto;
   background-color: #000;
 }
@@ -64,9 +60,7 @@
   background-color: #2196f3;
 }
 
-.main {
-  padding-top: 100px;
-}
+.main {}
 
 .hero {
   margin-bottom: 50px;
