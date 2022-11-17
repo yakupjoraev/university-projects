@@ -1,0 +1,185 @@
+.wrapper {}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {}
+
+.nav__logo-img {
+  max-width: 80px;
+  width: 100%;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.nav__item {}
+
+.nav__link {
+  position: relative;
+  font-size: 22px;
+  color: #fff;
+  transition: background-color 0.3s linear;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s linear;
+}
+
+.nav__link:hover::after {
+  background-color: #2196f3;
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.hero {
+  margin-bottom: 50px;
+  background-image: url('../img/hero-bg.webp');
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 600px;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  font-size: 70px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.hero__subtitle {
+  font-size: 40px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.project {
+  margin-bottom: 50px;
+}
+
+.project__title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.project__product {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(157, 231, 19);
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.about__descr {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.about__descr:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: #000;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.footer__copy {
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer__link {
+  font-size: 18px;
+  color: #2196f3;
+}
+
+@media (max-width: 700px) {
+  .nav__list {
+    column-gap: 20px;
+  }
+
+  .nav__link {
+    font-size: 18px;
+  }
+
+  .hero,
+  .project,
+  .about {
+    margin-bottom: 30px;
+  }
+
+  .hero__title {
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 40px;
+
+  }
+
+  .hero__subtitle,
+  .project__title,
+  .about__title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
